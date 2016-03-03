@@ -1,0 +1,90 @@
+body {
+
+
+}
+/* For Part One */
+nav li{
+  display:inline;
+  border-right:solid black 2px;
+  margin-right: 10px;
+  padding-right: 8px;
+
+}
+
+.LastBorder {
+  border-right: none;
+}
+
+nav {
+  border:solid black 2px;
+  margin: 5px;
+  text-align: left;
+  background-color: #FFB4B0;
+}
+
+
+/*For Part 2 */
+fieldset {
+  background-color: #4DD7FA;
+  border: solid black 2px;
+  width: 25%;
+  height: 433px;
+  line-height: 2.3;
+  margin-left: 5px;
+  float: left;
+}
+
+.center1 {
+ float: center;
+ margin: auto;
+ 
+}
+
+
+
+
+
+
+/*For Part 3*/
+article {
+  position: relative;
+  width: 70%;
+  height: 450px;
+  border: solid black 2px;
+  float: right;
+  background-color: #FEFAC0;
+  margin-right: 5px;
+}
+
+article li {
+  display: inline;
+  border-right:solid black 2px;
+  margin-right: 10px;
+  padding-right: 8px;
+
+
+}
+
+article section ul {
+  margin-left: 1px;
+  padding-left: 20px;
+}
+
+h1 {
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: brown;
+}
+
+article section {
+  margin-top: 10px;
+  margin-bottom:30px;
+}
+
+
+
+
+
+
+
