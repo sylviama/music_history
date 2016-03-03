@@ -19,11 +19,6 @@ Once you are done, make sure you add your files to git, make a commit, and then 
 
 # Music History Part 2
 
-## Setup
-
-1. Create a branch in your `musichistory` repository named `version2`.
-1. Switch to that branch.
-
 ## Requirements
 
 Use JavaScript arrays, loops, and innerHTML to show the music you love.
