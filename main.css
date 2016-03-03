@@ -48,8 +48,8 @@ fieldset {
 /*For Part 3*/
 article {
   position: relative;
-  width: 70%;
-  height: 450px;
+  width: 60%;
+  /*height: 450px;*/
   border: solid black 2px;
   float: right;
   background-color: #FEFAC0;
@@ -80,6 +80,11 @@ h1 {
 article section {
   margin-top: 10px;
   margin-bottom:30px;
+}
+
+/*Add Song Page*/
+#addSongPage {
+
 }
 
 
