@@ -13,14 +13,14 @@
 <!--Nav Bar -->
  <nav>
    <ul>
-    <li><a href="index.html">List Music</a></li>
-    <li><a href="addSong.html">Add Music</a></li>
+    <li><a href="#" id="link-list">List Music</a></li>
+    <li><a href="#" id="link-add">Add Music</a></li>
     <li class="LastBorder">Profile</li>
    </ul>
  </nav>
 
 
-
+<section id="listView">
  <!--The Second Part -->
  <fieldset>
   <form action="" method="post">
@@ -84,38 +84,24 @@
     </ul>
   </section>
 
-  <section>
-    <h1>You Belong With Me</h1>
-    <ul>
-      <li>Taylor Swift</li>
-      <li>Fearless</li>
-      <li class="LastBorder">Pop</li>
-    </ul>
-  </section>
-
-  <section>
-    <h1>Good Time</h1>
-    <ul>
-      <li>Owl City</li>
-      <li>The Midsummer Station</li>
-      <li class="LastBorder">Pop</li>
-    </ul>
-  </section>
-
-  <section>
-    <h1>All of Me</h1>
-    <ul>
-      <li>John Legend</li>
-      <li>Love In the Future</li>
-      <li class="LastBorder">Pop</li>
-    </ul>
-  </section>
-
   <section id="addedSong"></section>
+  <section id="addedSong2"></section>
 
  </article>
+</section>
 
+
+<!-- Add Song View -->
+<section id="addView" class="hidden">
+<div>
+    <input type="text" id="songName" placeholder="enter song here"><br>
+    <input type="text" id="artistPerson" placeholder = "enter artist here"><br>
+    <input type="text" id="albumName" placeholder ="enter album here"><br>
+    <button id="addBtn">Add</button><br>
+  </div>
+</section>
 
 <script src="song.js"></script>
+<script src="addSong.js"></script>
 </body>
 </html>
