@@ -1,0 +1,18 @@
+{
+  "songs":[
+  {
+    "songName":"Stressed Out",
+    "artist":"Twenty One Pilots",
+    "album":"Blurryface"
+  },
+  {
+    "songName":"Hello",
+    "artist":"Adele",
+    "album":"25"
+  },
+  {
+    "songName":"Stitches",
+    "artist":"Shawn Mendes",
+    "album":"Handwritten"
+  }
+  ]}
