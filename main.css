@@ -28,7 +28,7 @@ fieldset {
   background-color: #4DD7FA;
   border: solid black 2px;
   width: 25%;
-  height: 433px;
+  height: 450px;
   line-height: 2.3;
   margin-left: 5px;
   float: left;
@@ -37,7 +37,6 @@ fieldset {
 .center1 {
  float: center;
  margin: auto;
- 
 }
 
 
@@ -48,7 +47,7 @@ fieldset {
 /*For Part 3*/
 article {
   position: relative;
-  width: 60%;
+  width: 65%;
   /*height: 450px;*/
   border: solid black 2px;
   float: right;
@@ -61,8 +60,6 @@ article li {
   border-right:solid black 2px;
   margin-right: 10px;
   padding-right: 8px;
-
-
 }
 
 article section ul {
@@ -78,18 +75,20 @@ h1 {
 }
 
 article section {
-  margin-top: 10px;
-  margin-bottom:30px;
+  margin-top: 0px;
+  margin-bottom:0px;
 }
 
-/*Add Song Page*/
-#addSongPage {
+/*section.addView div {
+  margin: auto;
+  float: center;
+  width: 30%;
+}*/
 
+.hidden {
+  display: none;
 }
 
-
-
-
-
-
-
+.visible {
+  display: block;
+}
