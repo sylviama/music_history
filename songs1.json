@@ -1,0 +1,18 @@
+{
+  "songs":[
+  {
+    "songName":"Uptown Funk",
+    "artist":"Mark Ronson",
+    "album":"Uptown Special"
+  },
+  {
+    "songName":"Shake It Off",
+    "artist":"Taylor Swift",
+    "album":"1989"
+  },
+  {
+    "songName":"Love Yourself",
+    "artist":"Justin Bieber",
+    "album":"Purpose"
+  }
+  ]}
