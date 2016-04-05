@@ -72,6 +72,4 @@ Time to make Music History into a single page application. Before you begin plea
 
 ## Instructions
 
-This one's simple.
-
 Implement jQuery in your Music History code. Every `innerHTML`, `getElementById`, `getElementByClassName`, event listener and XHR request. Covert 'em all.
