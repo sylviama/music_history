@@ -67,3 +67,11 @@ Time to make Music History into a single page application. Before you begin plea
 1. Add a button at the bottom of your music list and label it "More >".
 1. Load the songs from the first list and inject the DOM into the document as you've already done.
 1. When the user clicks that button, load the songs from the second JSON file and append them to the bottom of the existing music, but before the More button. (A "Less" button will show. Click the Less Button to hide the part just showed)
+
+# Part 5
+
+## Instructions
+
+This one's simple.
+
+Implement jQuery in your Music History code. Every `innerHTML`, `getElementById`, `getElementByClassName`, event listener and XHR request. Covert 'em all.
