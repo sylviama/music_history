@@ -1,46 +1,37 @@
 //View show and hide function (Music History Part 3)
-document.getElementById("link-list").addEventListener("click", listShow);
-document.getElementById("link-add").addEventListener("click", addShow);
+$(document).ready(function(){
+  $("#link-list").click(listShow);
+  $("#link-add").click(addShow);
 
 
-function listShow(){
-  document.getElementById("listView").classList.add("visible");
-  document.getElementById("listView").classList.remove("hidden");
-
-  document.getElementById("addView").classList.add("hidden");
-  document.getElementById("addView").classList.remove("visible");
-  console.log("show List");
-}
-
-function addShow(){
-  document.getElementById("addView").classList.add("visible");
-  document.getElementById("addView").classList.remove("hidden");
-
-  document.getElementById("listView").classList.add("hidden");
-  document.getElementById("listView").classList.remove("visible");
-  console.log("show add");
-}
-
-
-
-//ADD SONG Function (Music History Part 3)
-document.getElementById("addBtn").addEventListener("click", addSongFunction);
-console.log("Song Object:",songInOrder);
-
-function addSongFunction(){
-  var songObject = {};
-  songObject.name = document.getElementById("songName").value;
-  songObject.artist = document.getElementById("artistPerson").value;
-  songObject.album = document.getElementById("albumName").value;
-  songInOrder.push(songObject);
-
-  var sec="";
-  for(i=0;i<songInOrder.length;i++){
-    var h1="<h1>"+songInOrder[i].name+"</h1>";
-    var li1Artist="<li>"+songInOrder[i].artist+"</li>";
-    var li2Album="<li>"+songInOrder[i].album+"</li>";
-
-    sec+="<section>"+h1+"<ul>"+li1Artist+li2Album+"</ul>"+"</section>";
+  function listShow(){
+    $("#listView").show();
+    $("#addView").hide();
   }
-  document.getElementById("addedSong").innerHTML= sec;
-}
+
+  function addShow(){
+    $("#listView").hide();
+    $("#addView").show();
+  }
+
+  //ADD SONG Function (Music History Part 3)
+  $("#addBtn").click(addSongFunction);
+
+  function addSongFunction(){
+    var songObject = {};
+    songObject.name = $("#songName").val();
+    songObject.artist = $("#artistPerson").val();
+    songObject.album = $("#albumName").val();
+    songInOrder.push(songObject);
+
+    $(songInOrder).each(function(i,element){
+      $("#addedSong").append("<section>");
+      $("#addedSong").append("<h1>"+element.name+"</h1>");
+      $("#addedSong").append("<li>"+element.artist+"</li>");
+      $("#addedSong").append("<li>"+element.album+"</li>");
+    });
+  };
+});
+
+
+

@@ -21,7 +21,6 @@ for(i=0;i<songs.length;i++){
   songInOrder[i].artist= songArraySed[0];
   songInOrder[i].album= songArraySed[1];
 }
-console.log("Song Object:",songInOrder);
 
 //Write the array into HTML
 var sec="";
