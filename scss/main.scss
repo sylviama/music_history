@@ -1,0 +1,22 @@
+@import 'part2';
+@import 'part3';
+
+/* For Part One */
+nav li{
+  display:inline;
+  border-right:solid black 2px;
+  margin-right: 10px;
+  padding-right: 8px;
+
+}
+
+.LastBorder {
+  border-right: none;
+}
+
+nav {
+  border:solid black 2px;
+  margin: 5px;
+  text-align: left;
+  background-color: #FFB4B0;
+}

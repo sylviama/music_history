@@ -1,0 +1,24 @@
+{
+  "name": "music_history",
+  "version": "1.0.0",
+  "description": "## Individual Assignment",
+  "main": "addJsonSongs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylviama0827/music_history.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylviama0827/music_history/issues"
+  },
+  "homepage": "https://github.com/sylviama0827/music_history#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.5"
+  }
+}
