@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -67,20 +68,18 @@
  <!--The Third Part -->
  <article>
   <section>
-    <h1>Roar</h1>
     <ul>
+      <li><b>Roar</b></li>
       <li>Katy Perry</li>
       <li>Prism</li>
-      <li class="LastBorder">Pop</li>
     </ul>
   </section>
 
   <section>
-    <h1>All This Time</h1>
     <ul>
+      <li><b>All This Time</b></li>
       <li>One Republic</li>
       <li>Waking Up</li>
-      <li class="LastBorder">Pop</li>
     </ul>
   </section>
 
@@ -99,8 +98,8 @@
 
 
 <!-- Add Song View -->
-<section id="addView" class="hidden">
-<div>
+<section id="addView" class="hidden" style="display: none">
+  <div>
     <input type="text" id="songName" placeholder="enter song here"><br>
     <input type="text" id="artistPerson" placeholder = "enter artist here"><br>
     <input type="text" id="albumName" placeholder ="enter album here"><br>
@@ -109,7 +108,7 @@
 </section>
 
 <script src= "bower_components/jquery/dist/jquery.js"></script>
-<script src="song.js"></script>
+<!-- <script src="song.js"></script> -->
 <script src="addSong.js"></script>
 <script src="addJsonSongs.js"></script>
 </body>

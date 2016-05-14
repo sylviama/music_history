@@ -25,15 +25,15 @@ for(i=0;i<songs.length;i++){
 //Write the array into HTML
 var sec="";
 for(i=0;i<songInOrder.length;i++){
-  var h1="<h1>"+songInOrder[i].name+"</h1>";
+  var liSongName="<li><b>"+songInOrder[i].name+"</b></li>";
   var li1Artist="<li>"+songInOrder[i].artist+"</li>";
   var li2Album="<li>"+songInOrder[i].album+"</li>";
 
-  sec+="<section>"+h1+"<ul>"+li1Artist+li2Album+"</ul>"+"</section>";
+  sec+="<section>"+"<ul>"+liSongName+li1Artist+li2Album+"</ul>"+"</section>";
 
 }
 
-document.getElementById("addedSong").innerHTML= sec;
+$("#addedSong").html(sec);
 
 
 

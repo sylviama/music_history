@@ -39,6 +39,7 @@ h1 {
   color: brown; }
 
 article section {
+  display: inline;
   margin-top: 0px;
   margin-bottom: 0px; }
 
@@ -52,6 +53,18 @@ article section {
 
 .visible {
   display: block; }
+
+/*Add Song View*/
+#addView {
+  width: 50%;
+  background-color: lightblue;
+  display: block;
+  margin: auto; }
+
+#addView div input, button {
+  padding-top: 3px;
+  display: block;
+  margin: auto; }
 
 /* For Part One */
 nav li {

@@ -1,18 +1,19 @@
 {
-  "songs":[
-  {
-    "songName":"Stressed Out",
-    "artist":"Twenty One Pilots",
-    "album":"Blurryface"
-  },
-  {
-    "songName":"Hello",
-    "artist":"Adele",
-    "album":"25"
-  },
-  {
-    "songName":"Stitches",
-    "artist":"Shawn Mendes",
-    "album":"Handwritten"
+  "songs":{
+    "song1":{
+      "songName":"Stressed Out",
+      "artist":"Twenty One Pilots",
+      "album":"Blurryface"
+    },
+    "song2":{
+      "songName":"Hello",
+      "artist":"Adele",
+      "album":"25"
+    },
+    "song3":{
+      "songName":"Stitches",
+      "artist":"Shawn Mendes",
+      "album":"Handwritten"
+    }
   }
-  ]}
+}
