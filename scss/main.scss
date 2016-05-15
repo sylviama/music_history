@@ -3,21 +3,18 @@
 @import 'addSongView';
 
 /* For Part One */
-nav li{
-  display:inline;
-  border-right:solid black 2px;
+nav li {
+  display: inline;
+  border-right: solid black 2px;
   margin-right: 10px;
-  padding-right: 8px;
-
-}
+  padding-right: 8px; }
 
 .LastBorder {
-  border-right: none;
-}
+  border-right: none; }
 
 nav {
-  border:solid black 2px;
+  border: solid black 2px;
   margin: 5px;
   text-align: left;
-  background-color: #FFB4B0;
-}
+  background-color: #FFB4B0; }
+

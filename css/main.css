@@ -32,8 +32,10 @@ article section ul {
   margin-left: 1px;
   padding-left: 20px; }
 
-h1 {
-  padding-left: 20px;
+.songNameSpecial {
+  font-weight: bold;
+  font-size: 120%;
+  padding-left: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
   color: brown; }
@@ -43,11 +45,10 @@ article section {
   margin-top: 0px;
   margin-bottom: 0px; }
 
-/*section.addView div {
-  margin: auto;
-  float: center;
-  width: 30%;
-}*/
+.deleteBtn {
+  margin-left: 10px;
+  font-size: 80%; }
+
 .hidden {
   display: none; }
 
@@ -61,10 +62,30 @@ article section {
   display: block;
   margin: auto; }
 
-#addView div input, button {
-  padding-top: 3px;
+#addView div {
+  padding-top: 2px; }
+
+#addView div h3 {
+  text-align: center; }
+
+#addView div input {
+  margin-top: 10px;
+  padding-top: 10px;
   display: block;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+
+#buttonDiv {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-left: 0;
+  padding-right: 0; }
+
+#buttonDiv button {
+  display: inline;
+  /*  margin: auto;*/
+  margin-bottom: 10px; }
 
 /* For Part One */
 nav li {

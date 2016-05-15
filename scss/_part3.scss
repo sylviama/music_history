@@ -6,43 +6,39 @@ article {
   border: solid black 2px;
   float: right;
   background-color: #FEFAC0;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 article li {
   display: inline;
-  border-right:solid black 2px;
+  border-right: solid black 2px;
   margin-right: 10px;
-  padding-right: 8px;
-}
+  padding-right: 8px; }
 
 article section ul {
   margin-left: 1px;
-  padding-left: 20px;
-}
+  padding-left: 20px; }
 
-h1 {
-  padding-left: 20px;
+.songNameSpecial {
+  font-weight: bold;
+  font-size: 120%;
+  padding-left: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  color: brown;
-}
+  color: brown; }
 
 article section {
+  display: inline;
   margin-top: 0px;
-  margin-bottom:0px;
-}
+  margin-bottom: 0px; }
 
-/*section.addView div {
-  margin: auto;
-  float: center;
-  width: 30%;
-}*/
+.deleteBtn {
+  margin-left: 10px;
+  font-size: 80%;
+}
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .visible {
-  display: block;
-}
+  display: block; }
+

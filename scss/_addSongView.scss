@@ -3,11 +3,38 @@
   width: 50%;
   background-color: lightblue;
   display: block;
-  margin: auto;
+  margin: auto; }
+
+#addView div {
+  padding-top: 2px;
 }
 
-#addView div input, button{
-  padding-top: 3px;
-  display: block;
-  margin: auto;
+#addView div h3 {
+ text-align: center;
 }
+
+#addView div input {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: block;
+  margin: auto; 
+  text-align: center;
+}
+
+
+
+#buttonDiv {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#buttonDiv button{
+  display: inline;
+/*  margin: auto;*/
+  margin-bottom: 10px;
+}
+
+

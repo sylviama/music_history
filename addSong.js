@@ -15,23 +15,56 @@ $(document).ready(function(){
   }
 
   //ADD SONG Function (Music History Part 3)
-  $("#addBtn").click(addSongFunction);
+  $("#addBtn").click(function(){
+    addSongFunction();
+    inputBoxClear();
+  });
+
+  $("#addGoBack").click(function(){
+    addSongFunction();
+    inputBoxClear();
+    listShow();
+  });
 
   function addSongFunction(){
-    var songObject = {};
-    songObject.name = $("#songName").val();
-    songObject.artist = $("#artistPerson").val();
-    songObject.album = $("#albumName").val();
-    songInOrder.push(songObject);
-
-    $(songInOrder).each(function(i,element){
-      $("#addedSong").append("<section>");
-      $("#addedSong").append("<h1>"+element.name+"</h1>");
-      $("#addedSong").append("<li>"+element.artist+"</li>");
-      $("#addedSong").append("<li>"+element.album+"</li>");
+    var songObject = {
+      "songName": $("#songName").val(),
+      "artist":$("#artistPerson").val(),
+      "album":$("#albumName").val()
+    };
+    // songObject.songName = $("#songName").val();
+    // songObject.artist = $("#artistPerson").val();
+    // songObject.album = $("#albumName").val();
+    // songInOrder.push(songObject);
+    $.ajax({
+      url:"https://trying-out.firebaseio.com/songs/.json",
+      type: "POST",
+      data: JSON.stringify(songObject)
+    }).done(function(){
+      $("#addedSongs3").empty();
+      getJSON1Data();
     });
   };
+
+  function inputBoxClear(){
+    $("#songName").val("");
+    $("#artistPerson").val("");
+    $("#albumName").val("");
+  };
+
 });
+    
+
+    
+
+    // $(songInOrder).each(function(i,element){
+    //   $("#addedSong").append("<section>");
+    //   $("#addedSong").append("<h1>"+element.name+"</h1>");
+    //   $("#addedSong").append("<li>"+element.artist+"</li>");
+    //   $("#addedSong").append("<li>"+element.album+"</li>");
+  
+
+
 
 
 
