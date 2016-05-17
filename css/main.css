@@ -49,6 +49,11 @@ article section {
   margin-left: 10px;
   font-size: 80%; }
 
+.editBtn {
+  margin-left: 10px;
+  font-size: 80%; }
+
+
 .hidden {
   display: none; }
 
@@ -68,7 +73,7 @@ article section {
 #addView div h3 {
   text-align: center; }
 
-#addView div input {
+#addView div span {
   margin-top: 10px;
   padding-top: 10px;
   display: block;
@@ -86,6 +91,7 @@ article section {
   display: inline;
   /*  margin: auto;*/
   margin-bottom: 10px; }
+
 
 /* For Part One */
 nav li {

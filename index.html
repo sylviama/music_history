@@ -67,6 +67,10 @@
 
  <!--The Third Part -->
  <article>
+ <form>
+  <input type="hidden">
+  </form>
+
   <section>
     <ul>
       <li class="songNameSpecial">Roar</li>
@@ -101,12 +105,16 @@
 <section id="addView" class="hidden" style="display: none">
   <div>
     <h3>ADD SONGS</h3>
-    <input type="text" id="songName" placeholder="enter song here"><br>
-    <input type="text" id="artistPerson" placeholder = "enter artist here"><br>
-    <input type="text" id="albumName" placeholder ="enter album here"><br>
+    <span>Song Name: <input type="text" id="songName" placeholder="enter song here"></span><br>
+    <span>Artist: <input type="text" id="artistPerson" placeholder = "enter artist here"></span><br>
+    <span>Album: <input type="text" id="albumName" placeholder ="enter album here"></span><br>
     <span id="buttonDiv">
       <button id="addBtn">Add and Stay</button>
       <button id="addGoBack">Add and Go to List</button>
+    </span>
+    <span>
+      <button id="cancelBtn" style="display:none">Cancel</button>
+      <button id="editSubmit" style="display:none">Update</button>
     </span>
   </div>
 </section>
@@ -115,5 +123,6 @@
 <!-- <script src="song.js"></script> -->
 <script src="addSong.js"></script>
 <script src="addJsonSongs.js"></script>
+<script src="edit.js"></script>
 </body>
 </html>

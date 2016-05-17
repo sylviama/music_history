@@ -18,7 +18,7 @@
   //this is the loop through with firebase change from array to objects
   let loopThrough=(data)=>{
     for (let key in data){
-      $("#addedSongs3").append("<ul><li class='songNameSpecial'>"+data[key].songName+"</li>"+"<li>"+data[key].artist+"</li><li>"+data[key].album+"</li><a class='deleteBtn' href='#' id="+key+">Delete</a></ul>");
+      $("#addedSongs3").append("<ul><li class='songNameSpecial'>"+data[key].songName+"</li><li>"+data[key].artist+"</li><li>"+data[key].album+"</li><a class='editBtn' href='#' id=edit_"+key+">Edit</a><a class='deleteBtn' href='#' id="+key+">Delete</a></ul>");
     }
   }
 
@@ -39,7 +39,7 @@
 
   let loadJson2=(data)=>{
     for(let key in data){
-      $("#addedSongs4").append("<ul><li class='songNameSpecial'>"+data[key].songName+"</li><li>"+data[key].artist+"</li><li>"+data[key].album+"</li><a  class='deleteBtn' href='#' id="+key+">Delete</a></ul>");
+      $("#addedSongs4").append("<ul><li class='songNameSpecial'>"+data[key].songName+"</li><li>"+data[key].artist+"</li><li>"+data[key].album+"</li><a class='editBtn' href='#' id=edit_"+key+">Edit</a><a class='deleteBtn' href='#' id="+key+">Delete</a></ul>");
 
     };
   };
@@ -65,8 +65,12 @@
   };
 
     // delete each song function
-    $("#addedSongs3").click((event)=>{
-      var deletekey=event.target.id;
+    $("#addedSongs3").click(()=>{
+      //try another way: 
+      $(document).on("click", ".deleteBtn", function(){
+      var deletekey=$(this).attr("id");
+
+      // var deletekey=event.target.id;
       var urlLink= "https://trying-out.firebaseio.com/songs/"+deletekey+"/.json";
       $.ajax({
         url: urlLink,
@@ -75,9 +79,8 @@
         //"refresh the page" by empty it then reload
         $("#addedSongs3").empty();
         getJSON1Data();
+        });
       });
-
-
     });
 
     $("#addedSongs4").click(function(event){
@@ -92,5 +95,5 @@
         getJSON2Data();
       });
     });
-// });
+
 

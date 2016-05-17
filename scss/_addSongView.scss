@@ -6,35 +6,26 @@
   margin: auto; }
 
 #addView div {
-  padding-top: 2px;
-}
+  padding-top: 2px; }
 
 #addView div h3 {
- text-align: center;
-}
+  text-align: center; }
 
-#addView div input {
+#addView div span {
   margin-top: 10px;
   padding-top: 10px;
   display: block;
-  margin: auto; 
-  text-align: center;
-}
-
-
+  margin: auto;
+  text-align: center; }
 
 #buttonDiv {
   display: block;
   margin-left: 30%;
   margin-right: 30%;
   padding-left: 0;
-  padding-right: 0;
-}
+  padding-right: 0; }
 
-#buttonDiv button{
+#buttonDiv button {
   display: inline;
-/*  margin: auto;*/
-  margin-bottom: 10px;
-}
-
-
+  /*  margin: auto;*/
+  margin-bottom: 10px; }

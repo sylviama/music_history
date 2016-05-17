@@ -1,7 +1,12 @@
 //View show and hide function (Music History Part 3)
-$(document).ready(function(){
+// $(document).ready(function(){
   $("#link-list").click(listShow);
-  $("#link-add").click(addShow);
+  $("#link-add").click(function(){
+    addShow();
+    $("#addBtn").show();
+    $("#addGoBack").show();
+    $("#editSubmit").hide();
+  });
 
 
   function listShow(){
@@ -50,9 +55,10 @@ $(document).ready(function(){
     $("#songName").val("");
     $("#artistPerson").val("");
     $("#albumName").val("");
+    listShow();
   };
 
-});
+// });
     
 
     
